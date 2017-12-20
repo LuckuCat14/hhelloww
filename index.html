@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>whatahelli$goinon</title>
+  <meta charset="utf-8">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script>
+      $(function () {
+         $({
+             n: 0
+         }).animate({
+             n: 1E3
+         }, {
+             duration: 20E3,
+             step: function (a) {
+                 $("#test").html(a | 0)
+             }
+         })
+     });
+  </script>
+</head>
+ 
+<body>
+<div id="test"></div>
+</body>
+</html>
